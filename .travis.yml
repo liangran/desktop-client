@@ -1,7 +1,7 @@
 dist: trusty
 language: node_js
 node_js:
-  - "4"
+  - "8"
 
 before_install:
   - sudo apt-get update -q
@@ -25,7 +25,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: 65282935338b16f513d1bf6b31e078a856becc97
+    secure: hNRNm5ORkB+aKAApJXrpB5k67TNGcRWymdWDcXRLJm/ecLUq3wueLIlIXZEbyF0PeEp2ZFYFG8tmL+vXLTpprD8Fe71MQyDz85AvHa+JsFNOKIzlsbjKaLrcI+vDcj+nQKUpN7qfSRq4GZzgWX0ggNmCHUfaO/O4zXBd2/Mbxnrvx6FmipWl9iiAUMbqcFvfUTsl1zeiSzD8RhrNod/i3abxPdd/2oMX8D9fyM1QEFbccEd+1G1lr5IRY5dq78hnbb3iOIdSkCyLT87sJ7aZwfPCPP1RDOwT6M4FNqWLXnXc6bVQrI4Uljp7zdH6RY4Xl38J8OxYcsk2O9iWWGQ9nn1pUH+GvLVCl/Z5DTOekhj/I61a7rxhHKfHO+ab+jdW8gIXVU33rhLXayQjZXElkdaOMcDgvV8jQ3I6W3ialhA/gn5pTBpe8/HBLiTZuM66HR/A4Q2OZMz6tNVbcKi4jX2Tx/gO2A+DA5F9+tgOtmr1P2CciPPCnShZLJC2Lf0sFbUTACDi43KgHZDVTHBIU88HIRFe72xO+j45ihrlPK773UFVPwglQ5ouLmfjAIHL6PdL42Mnm2Ly0uNCtr/AnjDwTSXFfEst5GGTE1G1GkASCJ+BWTH7JfeVv41ATEZutiw9OSnHyOTcMKJmO8701GsHzoP6AzSZGQNpXLn4xtc=
   skip_cleanup: true
   file_glob: true
   file: ./*
